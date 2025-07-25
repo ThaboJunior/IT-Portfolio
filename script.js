@@ -236,4 +236,22 @@ if ('IntersectionObserver' in window) {
     document.querySelectorAll('.tool-item, .reference-card').forEach(element => {
         observer.observe(element);
     });
+
+    //mobile-nav
+
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navItems = mobileMenu.querySelectorAll('.nav-item');
+
+    toggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+
+
 }

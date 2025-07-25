@@ -99,6 +99,44 @@ body {
     background-color: hsla(210, 80%, 65%, 0.1);
 }
 
+/* Hide hamburger by default, show on mobile */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        border-top: 1px solid var(--border);
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none; /* already hidden on mobile */
+    }
+}
+
+
 /* Hide nav menu on mobile */
 @media (max-width: 768px) {
     .nav-menu {

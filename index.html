@@ -30,11 +30,18 @@
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-content">
                 <div class="nav-brand">Thabo Molibeli</div>
+
+                <!-- Hamburger icon (visible on mobile) -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+
                 <div class="nav-menu">
                     <button class="nav-item" data-target="hero">Home</button>
                     <button class="nav-item" data-target="about">About</button>
@@ -45,8 +52,20 @@
                     <button class="nav-item" data-target="contact">Contact</button>
                 </div>
             </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="nav-item" data-target="hero">Home</button>
+                <button class="nav-item" data-target="about">About</button>
+                <button class="nav-item" data-target="skills">Skills</button>
+                <button class="nav-item" data-target="tools">Tools</button>
+                <button class="nav-item" data-target="soft-skills">Soft Skills</button>
+                <button class="nav-item" data-target="references">References</button>
+                <button class="nav-item" data-target="contact">Contact</button>
+            </div>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -82,15 +101,15 @@
                             <p class="education-gpa">AVG 79% • Distinction</p>
                         </div>
 
-                         <div class="education-item">
+                        <div class="education-item">
                             <h4 class="education-degree">Matric</h4>
                             <p class="education-school">Hoerskool Hercules • 2014-2019</p>
-                         </div>
+                        </div>
 
                         <h3 class="about-heading">Professional Summary</h3>
                         <p class="about-text">
-                            Motivated, passionate software developer who recently completed his 
-                            Diploma in IT with distinction, proficient in Java, C#, PHP, and SQL. 
+                            Motivated, passionate software developer who recently completed his
+                            Diploma in IT with distinction, proficient in Java, C#, PHP, and SQL.
                             Skilled in building web and mobile applications, with strong problem-solving
                             and collaboration abilities. Eager to contribute toinnovative projects and
                             grow professionally in a dynamic tech environment.
@@ -342,7 +361,7 @@
                         </div>
 
                         <div class="contact-detail">
-                           <div class="contact-icon">
+                            <div class="contact-icon">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </div>
                             <div class="contact-content">

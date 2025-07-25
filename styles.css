@@ -270,16 +270,16 @@ body {
     line-height: 1.8;
 }
 
-/* .about-image img {
+.about-image img {
     display: flex;
-    width: 490px;
-    
-    height: 655px;
+    width: 400px;
+    /* adjust as needed */
+    height: 535px;
     border-radius: 10px;
-    
+    /* rounded corners */
     object-fit: cover;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-} */
+}
 
 
 @media (max-width: 768px) {

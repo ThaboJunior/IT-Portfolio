@@ -272,9 +272,9 @@ body {
 
 .about-image img {
     display: flex;
-    width: 400px;
+    width: 350px;
     /* adjust as needed */
-    height: 535px;
+    height: 480px;
     border-radius: 10px;
     /* rounded corners */
     object-fit: cover;
@@ -292,6 +292,7 @@ body {
         align-items: center;
         justify-content: center;
         order: -1;
+        grid-template-columns: 1fr;
     }
 
     .profile-card {

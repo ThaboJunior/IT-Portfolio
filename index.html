@@ -1,422 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thabo's IT Portfolio</title>
-    <meta name="description" content="Professional Portfolio - Turning ideas into reality with code">
-    <meta name="author" content="Alex Johnson">
+    <meta
+      name="description"
+      content="Professional Portfolio - Turning ideas into reality with code"
+    />
+    <meta name="author" content="Alex Johnson" />
 
     <!-- devicon link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-content">
-                <div class="nav-brand">Thabo Molibeli</div>
+      <div class="nav-container">
+        <div class="nav-content">
+          <div class="nav-brand">Thabo Molibeli</div>
 
-                <!-- Hamburger icon (visible on mobile) -->
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                    ☰
-                </button>
+          <!-- Hamburger icon (visible on mobile) -->
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
 
-                <div class="nav-menu">
-                    <button class="nav-item" data-target="hero">Home</button>
-                    <button class="nav-item" data-target="about">About</button>
-                    <button class="nav-item" data-target="skills">Skills</button>
-                    <button class="nav-item" data-target="tools">Tools</button>
-                    <button class="nav-item" data-target="soft-skills">Soft Skills</button>
-                    <button class="nav-item" data-target="references">References</button>
-                    <button class="nav-item" data-target="contact">Contact</button>
-                </div>
-            </div>
-
-            <!-- Mobile menu -->
-            <div class="mobile-menu" id="mobile-menu">
-                <button class="nav-item" data-target="hero">Home</button>
-                <button class="nav-item" data-target="about">About</button>
-                <button class="nav-item" data-target="skills">Skills</button>
-                <button class="nav-item" data-target="tools">Tools</button>
-                <button class="nav-item" data-target="soft-skills">Soft Skills</button>
-                <button class="nav-item" data-target="references">References</button>
-                <button class="nav-item" data-target="contact">Contact</button>
-            </div>
+          <div class="nav-menu">
+            <button class="nav-item" data-target="hero">Home</button>
+            <button class="nav-item" data-target="about">About</button>
+            <button class="nav-item" data-target="skills">Skills</button>
+            <button class="nav-item" data-target="tools">Tools</button>
+            <button class="nav-item" data-target="soft-skills">
+              Soft Skills
+            </button>
+            <button class="nav-item" data-target="references">
+              References
+            </button>
+            <button class="nav-item" data-target="contact">Contact</button>
+          </div>
         </div>
-    </nav>
 
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobile-menu">
+          <button class="nav-item" data-target="hero">Home</button>
+          <button class="nav-item" data-target="about">About</button>
+          <button class="nav-item" data-target="skills">Skills</button>
+          <button class="nav-item" data-target="tools">Tools</button>
+          <button class="nav-item" data-target="soft-skills">
+            Soft Skills
+          </button>
+          <button class="nav-item" data-target="references">References</button>
+          <button class="nav-item" data-target="contact">Contact</button>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hello, I'm
-                    <span class="hero-name">Thabo Molibeli</span>
-                </h1>
-                <p class="hero-subtitle">Turning ideas into reality with code</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" data-target="about">Learn More</button>
-                    <button class="btn btn-outline" data-target="contact">Get In Touch</button>
-                    <a href="Docs/Thabo Molibeli CV.pdf" download class="btn btn-primary">Download CV</a>
-
-                </div>
-            </div>
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hello, I'm
+            <span class="hero-name">Thabo Molibeli</span>
+          </h1>
+          <p class="hero-subtitle">Turning ideas into reality with code</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-target="about">
+              Learn More
+            </button>
+            <button class="btn btn-outline" data-target="contact">
+              Get In Touch
+            </button>
+            <a
+              href="Docs/Thabo Molibeli CV.pdf"
+              download
+              class="btn btn-primary"
+              >Download CV</a
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="section section-muted">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-content">
-                    <div class="about-card">
-                        <h3 class="about-heading">Education</h3>
-                        <div class="education-item">
-                            <h4 class="education-degree">Diploma in IT Software Development</h4>
-                            <p class="education-school">Rosebank College • 2022-2024</p>
-                            <p class="education-gpa">AVG 79% • Distinction</p>
-                        </div>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="about-card">
+              <h3 class="about-heading">Education</h3>
+              <div class="education-item">
+                <h4 class="education-degree">
+                  Diploma in IT Software Development
+                </h4>
+                <p class="education-school">Rosebank College • 2022-2024</p>
+                <p class="education-gpa">AVG 79% • Distinction</p>
+              </div>
 
-                        <div class="education-item">
-                            <h4 class="education-degree">Matric</h4>
-                            <p class="education-school">Hoerskool Hercules • 2014-2019</p>
-                        </div>
+              <div class="education-item">
+                <h4 class="education-degree">Matric</h4>
+                <p class="education-school">Hoerskool Hercules • 2014-2019</p>
+              </div>
 
-                        <h3 class="about-heading">Professional Summary</h3>
-                        <p class="about-text">
-                            Motivated, passionate software developer who recently completed his
-                            Diploma in IT with distinction, proficient in Java, C#, PHP, and SQL.
-                            Skilled in building web and mobile applications, with strong problem-solving
-                            and collaboration abilities. Eager to contribute to innovative projects and
-                            grow professionally in a dynamic tech environment.
-                        </p>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/Thabo.JPG">
-                </div>
+              <h3 class="about-heading">Professional Summary</h3>
+              <p class="about-text">
+                Motivated, passionate software developer who recently completed
+                his Diploma in IT with distinction, proficient in Java, C#, PHP,
+                and SQL. Skilled in building web and mobile applications, with
+                strong problem-solving and collaboration abilities. Eager to
+                contribute to innovative projects and grow professionally in a
+                dynamic tech environment.
+              </p>
             </div>
+          </div>
+          <div class="about-image">
+            <img src="images/Thabo.JPG" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills & Expertise Section -->
     <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-item" data-skill="90">
-                    <div class="skill-header">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-coral"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="80">
-                    <div class="skill-header">
-                        <span class="skill-name">Java</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-primary"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">C#</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-purple"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">PHP</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-accent"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-coral"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">SQL</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-primary"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-purple"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item" data-skill="70">
-                    <div class="skill-header">
-                        <span class="skill-name">Kotlin</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress skill-accent"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-skill="90">
+            <div class="skill-header">
+              <span class="skill-name">HTML</span>
+              <span class="skill-percentage">90%</span>
             </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-coral"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="80">
+            <div class="skill-header">
+              <span class="skill-name">Java</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-primary"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">C#</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-purple"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">PHP</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-accent"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-coral"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">SQL</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-primary"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">CSS</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-purple"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-skill="70">
+            <div class="skill-header">
+              <span class="skill-name">Kotlin</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress skill-accent"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Tools & Platforms Section -->
     <section id="tools" class="section section-muted">
-        <div class="container">
-            <h2 class="section-title">Tools & Platforms</h2>
-            <div class="tools-grid">
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-androidstudio-plain colored"></i></div>
-                    <h3 class="tool-name">Android Studio</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-visualstudio-plain colored"></i></div>
-                    <h3 class="tool-name">Visual Studio</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-vscode-plain colored"></i></div>
-                    <h3 class="tool-name">VS Code</h3>
-                </div>
-                <!-- <div class="tool-item">
+      <div class="container">
+        <h2 class="section-title">Tools & Platforms</h2>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-androidstudio-plain colored"></i>
+            </div>
+            <h3 class="tool-name">Android Studio</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-visualstudio-plain colored"></i>
+            </div>
+            <h3 class="tool-name">Visual Studio</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-vscode-plain colored"></i>
+            </div>
+            <h3 class="tool-name">VS Code</h3>
+          </div>
+          <!-- <div class="tool-item">
                     <div class="tool-icon"><i class="devicon-apache-netbeans-plain colored"></i></div>
                     <h3 class="tool-name">NetBeans</h3>
                 </div> -->
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-azure-plain colored"></i></div>
-                    <h3 class="tool-name">Azure DevOps</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-mysql-plain"></i></div>
-                    <h3 class="tool-name">SQL Server</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-firebase-plain"></i></div>
-                    <h3 class="tool-name">Firebase</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-oracle-original"></i></div>
-                    <h3 class="tool-name">Oracle</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-windows8-original colored"></i></div>
-                    <h3 class="tool-name">Microsoft 365</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-git-plain colored"></i></div>
-                    <h3 class="tool-name">Git</h3>
-                </div>
-                <div class="tool-item">
-                    <div class="tool-icon"><i class="devicon-dot-net-plain colored"></i></div>
-                    <h3 class="tool-name">.NET</h3>
-                </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-azure-plain colored"></i>
             </div>
+            <h3 class="tool-name">Azure DevOps</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon"><i class="devicon-mysql-plain"></i></div>
+            <h3 class="tool-name">SQL Server</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon"><i class="devicon-firebase-plain"></i></div>
+            <h3 class="tool-name">Firebase</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon"><i class="devicon-oracle-original"></i></div>
+            <h3 class="tool-name">Oracle</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-windows8-original colored"></i>
+            </div>
+            <h3 class="tool-name">Microsoft 365</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <h3 class="tool-name">Git</h3>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="devicon-dot-net-plain colored"></i>
+            </div>
+            <h3 class="tool-name">.NET</h3>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Soft Skills Section -->
     <section id="soft-skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Soft Skills</h2>
-            <div class="soft-skills-grid">
-                <div class="soft-skill-item">Teamwork</div>
-                <div class="soft-skill-item">Communication</div>
-                <div class="soft-skill-item">Problem-solving</div>
-                <div class="soft-skill-item">Adaptability</div>
-                <div class="soft-skill-item">Critical Thinking</div>
-                <div class="soft-skill-item">Time Management</div>
-                <div class="soft-skill-item">Collaborative</div>
-                <div class="soft-skill-item">Organised</div>
-                <div class="soft-skill-item">Dedicated</div>
-                <div class="soft-skill-item">Team Player</div>
-                <div class="soft-skill-item">Leadership</div>
-                <div class="soft-skill-item">Creative Thinking</div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-item">Teamwork</div>
+          <div class="soft-skill-item">Communication</div>
+          <div class="soft-skill-item">Problem-solving</div>
+          <div class="soft-skill-item">Adaptability</div>
+          <div class="soft-skill-item">Critical Thinking</div>
+          <div class="soft-skill-item">Time Management</div>
+          <div class="soft-skill-item">Collaborative</div>
+          <div class="soft-skill-item">Organised</div>
+          <div class="soft-skill-item">Dedicated</div>
+          <div class="soft-skill-item">Team Player</div>
+          <div class="soft-skill-item">Leadership</div>
+          <div class="soft-skill-item">Creative Thinking</div>
         </div>
+      </div>
     </section>
 
     <!-- References Section -->
     <section id="references" class="section section-muted">
-        <div class="container">
-            <h2 class="section-title">References</h2>
-            <div class="references-grid">
-                <div class="reference-card">
-                    <div class="reference-header">
-                        <div class="reference-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <h3 class="reference-name">Rhulani Kobeni</h3>
-                        <p class="reference-position">Lecturer</p>
-                        <p class="reference-company">Rosebank College</p>
-                    </div>
-                    <div class="reference-contact">
-                        <div class="contact-item">
-                            <i data-lucide="mail"></i>
-                            <span>rkobeni@rosebankcollege.co.za</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reference-card">
-                    <div class="reference-header">
-                        <div class="reference-avatar">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <h3 class="reference-name">Tisetso Modiselle</h3>
-                        <p class="reference-position">WIL Group Member</p>
-                        <p class="reference-company">Rosebank College</p>
-                    </div>
-                    <div class="reference-contact">
-                        <div class="contact-item">
-                            <i data-lucide="mail"></i>
-                            <span>junmodiselle@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i data-lucide="phone"></i>
-                            <span>+27 67 889 4083</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">References</h2>
+        <div class="references-grid">
+          <div class="reference-card">
+            <div class="reference-header">
+              <div class="reference-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3 class="reference-name">Rhulani Kobeni</h3>
+              <p class="reference-position">Lecturer</p>
+              <p class="reference-company">Rosebank College</p>
             </div>
+            <div class="reference-contact">
+              <div class="contact-item">
+                <i data-lucide="mail"></i>
+                <span>rkobeni@rosebankcollege.co.za</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reference-card">
+            <div class="reference-header">
+              <div class="reference-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3 class="reference-name">Tisetso Modiselle</h3>
+              <p class="reference-position">WIL Group Member</p>
+              <p class="reference-company">Rosebank College</p>
+            </div>
+            <div class="reference-contact">
+              <div class="contact-item">
+                <i data-lucide="mail"></i>
+                <span>junmodiselle@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i data-lucide="phone"></i>
+                <span>+27 67 889 4083</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3 class="contact-heading">Let's Connect</h3>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i data-lucide="mail"></i>
-                            </div>
-                            <div class="contact-content">
-                                <p class="contact-label">Email</p>
-                                <p class="contact-value">thabojunior851@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i data-lucide="phone"></i>
-                            </div>
-                            <div class="contact-content">
-                                <p class="contact-label">Phone</p>
-                                <p class="contact-value">+27 76 411 3922</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div class="contact-content">
-                                <p class="contact-label">Whatsapp</p>
-                                <p class="contact-value">+27 76 411 3922</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-detail">
-                            <div class="contact-icon">
-                                <i data-lucide="map-pin"></i>
-                            </div>
-                            <div class="contact-content">
-                                <p class="contact-label">Location</p>
-                                <p class="contact-value">South Africa, Pretoria</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3 class="contact-heading">Let's Connect</h3>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i data-lucide="mail"></i>
                 </div>
-
-                <div class="social-media">
-                    <h3 class="contact-heading">See my work</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/ThaboJunior" class="social-link">
-                            <div class="social-icon github">
-                                <i data-lucide="github"></i>
-                            </div>
-                            <div class="social-content">
-                                <p class="social-label">GitHub</p>
-                                <p class="social-value">@ThaboJunior</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/thabo-molibeli-6b4130250/" class="social-link">
-                            <div class="social-icon linkedin">
-                                <i data-lucide="linkedin"></i>
-                            </div>
-                            <div class="social-content">
-                                <p class="social-label">LinkedIn</p>
-                                <p class="social-value">Thabo Molibeli</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="contact-content">
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value">thabojunior851@gmail.com</p>
                 </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="contact-content">
+                  <p class="contact-label">Phone</p>
+                  <p class="contact-value">+27 76 411 3922</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <a href="https://wa.me/27764113922" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+                <div class="contact-content">
+                  <p class="contact-label">Whatsapp</p>
+                  <p class="contact-value">+27 76 411 3922</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-content">
+                  <p class="contact-label">Location</p>
+                  <p class="contact-value">South Africa, Pretoria</p>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="social-media">
+            <h3 class="contact-heading">See my work</h3>
+            <div class="social-links">
+              <a href="https://github.com/ThaboJunior" class="social-link">
+                <div class="social-icon github">
+                  <i data-lucide="github"></i>
+                </div>
+                <div class="social-content">
+                  <p class="social-label">GitHub</p>
+                  <p class="social-value">@ThaboJunior</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/thabo-molibeli-6b4130250/"
+                class="social-link"
+              >
+                <div class="social-icon linkedin">
+                  <i data-lucide="linkedin"></i>
+                </div>
+                <div class="social-content">
+                  <p class="social-label">LinkedIn</p>
+                  <p class="social-value">Thabo Molibeli</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 TJ Molibeli. IT Portfolio.</p>
+      <p>© 2025 TJ Molibeli. IT Portfolio.</p>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

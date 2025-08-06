@@ -613,7 +613,7 @@ body {
 
 .fa-whatsapp {
   font-size: 25px;
-  color: #0077b5;
+  color: var(--primary);
 }
 
 .contact-label {

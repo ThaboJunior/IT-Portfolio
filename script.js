@@ -1,3 +1,12 @@
+// Optional JS to restart animation when page reloads
+    window.onload = () => {
+      const name = document.querySelector('.hero-subtitle');
+      name.style.animation = 'none';
+      setTimeout(() => {
+        name.style.animation = '';
+      }, 10);
+    };
+
 // Initialize the portfolio when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializePortfolio();

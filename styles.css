@@ -655,9 +655,29 @@ body {
   color: var(--primary);
 }
 
+.contact-icon-whatsapp {
+  width: 3rem;
+  height: 3rem;
+  background: hsla(210, 80%, 65%, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.contact-icon-whatsapp:hover {
+  background: hsla(210, 87%, 56%, 0.2);
+  transform: scale(1.1);
+}
+
 .fa-whatsapp {
   font-size: 25px;
   color: var(--primary);
+}
+
+.fa-whatsapp:hover{
+  color:rgb(75, 245, 75)
 }
 
 .contact-label {
